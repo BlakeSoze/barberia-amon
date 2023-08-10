@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*! HEADER */
+header{
+    background-color: brown;
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 55px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 25px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*! MAIN */
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/andrea-donato-MNu0n-3BIKs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div{
+    color: white;
+    text-align: center;
+}
+.hero div h2{
+    font-size: 70px;
+    border: 3px white solid;
+    display: inline-block;
+    padding: 25px;
+}
+.hero div p{
+    font-size: 26px;
+}
+
+
+/*! section turno */
+.turno{
+    width: 100%;
+    height: 25vh;
+    background-color: #AB7735;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.turno h2{
+    font-size: 30px;
+    padding-top: 15px;
+}
+.turno p{
+    margin-bottom: 20px;
+}
+
+.turno a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+
+
+/*! section la barberia */
+.barberia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barberia div h2{
+    font-size: 50px;
+}
+
+.barberia div{
+    width: 500px;
+    height: 449px;
+    margin: 40px;
+}
+
+.barberia div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*! section colections */
+.colections {
+    background-color: black;
+}
+.colections div{
+    margin: 40px;
+}
+
+.colections h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: 3px solid white;
+}
+.colections .tarjetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.colections .tarjetas div{
+    border: 3px solid white;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+}
+.colections div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*! servicios */
+
+.nuestros-servicios{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 250px 250px 250px;
+    gap: 25px;
+}
+
+
+
+/*! youtube */
+.youtube{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.youtube img{
+    width: 50px;
+}
+
+/*! FOOTER */
+
+footer{
+    background-color: #AB7735;
+    color: white;
+    padding: 25px;
+    border: 3px solid white;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 750px){
+    header{
+        flex-direction: column;
+    }
+}
